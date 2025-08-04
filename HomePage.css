@@ -1,0 +1,62 @@
+nav{
+    background-color: #0c1f3c; 
+    color: #bfbbbd;
+    padding: 50px;
+    img{
+        padding-right: 700px;
+    }
+
+    a{
+        padding-left: 30px;
+        text-decoration: none;
+        color: #bfbbbd;
+    }
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Home{
+    .Texts{
+    background-color: #c6c3c6;
+    color: #535b6e;
+    padding: 10px 0px 200px 60px;
+    h1{
+        padding-left: 60px;
+    }
+    p{
+        padding: 60px 0px 80px 60px;
+    }
+    a{
+        margin: 100px 0px 105px 70px;
+        text-decoration: none;
+        padding: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        color: black;
+    }
+    }
+}
+
+
+.Products{
+    color: #bfbbbd;
+    background-color:#0c1f3c ;
+    padding-bottom: 600px;
+
+    h1{
+        text-align: center;
+    }
+}
+
+.Howweworks{
+    color: black;
+    background-color: #bfbbbd;
+    padding-bottom: 600px;
+
+    h1{
+        text-align: center;
+    }
+}
