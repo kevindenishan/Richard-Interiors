@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Richard Interios</title>
-        <link rel="icon" type="image/x-icon" href="Ri.jpg">
+        <link rel="icon" type="image/x-icon" href="images/Ri.jpg">
         <link rel="stylesheet" href="HomePage.css">
         <!doctype html>
         <html lang="en">
@@ -28,7 +28,7 @@
     <body>
 
         <nav>
-
+            
             <div class="navigation">
                 <img src="" alt="Logo of Richard interior"> 
                 <a href="#Home">Home</a><a href="#Products">Products</a><a href="">Portfolio</a><a href="">Page</a><a href="">Gallery</a><a href="">Blog</a>
@@ -39,11 +39,48 @@
         
         <div class="Home" id="Home"> 
 
-            <!--This is the Home displays the quote of the page and a image for the reference in right side , under the quaote ther is a COntact us button that provide the contact number and the email id of richard intirors-->
-            
-            <div class="Image">
-                <img src="interiorimage" alt="Intrior design reference" width="500px" height="500px" style="float: right;">
+        <!--This is the Home displays the quote of the page and a image for the reference in right side , under the quaote ther is a COntact us button that provide the contact number and the email id of richard intirors-->
+        
+        <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" >
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('images/DSC00880.JPG')">
+            <div class="carousel-caption text-end">
+            <h5>Elegant Interior</h5>
+            <p>Explore modern and minimal furniture sets for your dream home.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
             </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('images/DSC01703.JPG')">
+            <div class="carousel-caption text-start">
+            <h5>Comfort Meets Style</h5>
+            <p>Discover cozy and stylish furniture collections that fit your space.</p>
+            <a href="#" class="btn btn-warning">Discover</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('images/DSC03101.JPG')">
+            <div class="carousel-caption text-center">
+            <h5>Luxury Living</h5>
+            <p>Give your home a premium look with our exclusive furniture.</p>
+            <a href="#Products" class="btn btn-light">View Collection</a>
+            </div>
+        </div>
+
+        </div>
+        </div>
             <div class="Texts">
                 <h1 > World Class Intrior Design</h1>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta <br> dolorem id laboriosam odit earum vero deserunt, alias aut officiis natus totam voluptates, <br> sapiente inventore! Molestiae, corrupti consequuntur. Excepturi, enim.</p>
@@ -54,16 +91,38 @@
         <div class="Products" id="Products">
 
             <!-- This is Our product page is contain full of images of the product when user hover the image then it will size up smoothlt for 0.4 sec  -->
-            <h1>Our Products</h1>
-            <div class="product-grid">
-                <div class="product-item"><img src="product1.jpg" alt="Product 1"></div>
-                <div class="product-item"><img src="product2.jpg" alt="Product 2"></div>
-                <div class="product-item"><img src="product3.jpg" alt="Product 3"></div>
-                <div class="product-item"><img src="product4.jpg" alt="Product 4"></div>
-                <div class="product-item"><img src="product5.jpg" alt="Product 5"></div>
-                <div class="product-item"><img src="product6.jpg" alt="Product 6"></div>
-            </div>
-            <p>Explore our wide range of products designed to enhance your living spaces.</p>
+            <section class="product-section container">
+                <h2 class="product-title">Our Products</h2>
+                <div class="row">
+                <!-- First Row -->
+                <div class="col-md-3 col-sm-6 img-col">
+                    <img src="images/facebook.png" class="product-img" alt="Product 1" />
+                </div>
+                <div class="col-md-3 col-sm-6 img-col">
+                    <img src="images/Halloween.jpg" class="product-img" alt="Product 2" />
+                </div>
+                <div class="col-md-3 col-sm-6 img-col">
+                    <img src="images/Instagram.png" class="product-img" alt="Product 3" />
+                </div>
+                <div class="col-md-3 col-sm-6 img-col">
+                    <img src="images/linkedin.png" class="product-img" alt="Product 4" />
+                </div>
+
+                <!-- Second Row -->
+                <div class="col-md-3 col-sm-6 img-col">
+                    <img src="images/Wall_Pallet1[1]_copy[1].jpg" class="product-img" alt="Product 5" />
+                </div>
+                <div class="col-md-3 col-sm-6 img-col">
+                    <img src="images/website.png" class="product-img" alt="Product 6" />
+                </div>
+                <div class="col-md-3 col-sm-6 img-col">
+                    <img src="images/youtube.1.png" class="product-img" alt="Product 7" />
+                </div>
+                <div class="col-md-3 col-sm-6 img-col">
+                    <img src="images/IMG_4529.JPG" class="product-img" alt="Product 8" />
+                </div>
+                </div>
+            </section>
             
 
         <div class="Howweworks" id="Howweworks">
