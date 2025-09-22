@@ -1,0 +1,265 @@
+/* Hero Section */
+nav {
+  background: linear-gradient(135deg, #0c1f3c, #648eca);
+  color: #bfbbbd;
+  padding: 50px;
+
+  img {
+    border-radius: 30px;
+    float: left;
+  }
+
+  .navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .button-34 {
+    background: #2e2e8f;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+  }
+
+  .button-34:hover {
+    background: #4F4AE8;
+    box-shadow: #000000 0 10px 10px -10px;
+    opacity: 1;
+    transform: translateY(-2px);
+    transition: all 0.2s;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+  }
+
+  li {
+
+    display: inline-block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+
+  }
+
+  li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-hero {
+  position: relative;
+  background: url("images/HeroAbout.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.about-hero p {
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* Who We Are */
+.about-company {
+  padding: 60px;
+  background: #f9f9f9;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  width: 45%;
+  border-radius: 15px;
+}
+
+.about-content div {
+  flex: 1;
+}
+
+.about-content h2 {
+  color: #0c1f3c;
+  margin-bottom: 20px;
+}
+
+/* Sales Process */
+.sales-process {
+  background: linear-gradient(135deg, #0c1f3c, #648eca);
+  color: #fff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 220px;
+  transition: transform 0.3s;
+}
+
+.step img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.step:hover {
+  transform: translateY(-8px);
+}
+
+/* Customer Stats */
+.customer-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 0;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 2.5rem;
+  color: #0c1f3c;
+}
+
+.stat p {
+  color: #333;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 60px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  margin-bottom: 30px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+.footer {
+  background: linear-gradient(135deg, #0c1f3c, #648eca);
+  color: #bfbbbd;
+  padding: 40px 80px;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* spread evenly */
+  flex-wrap: wrap; /* responsive on smaller screens */
+  gap: 20px;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 200px; /* prevent shrinking too much */
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #5d5c5c;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: #5d5c5c;
+}
+
+.footer a:hover {
+  color: #248be6;
+}
+
+.footer .social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer .social-icons img {
+  margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  filter: invert(60%) sepia(20%) saturate(200%) hue-rotate(170deg) brightness(90%) contrast(85%);
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+
+.footer .social-icons img:hover {
+  filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
+.footer .Copyrights {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #888;
+}
+

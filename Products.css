@@ -1,0 +1,230 @@
+nav {
+  background: linear-gradient(135deg, #0c1f3c, #648eca);
+  color: #bfbbbd;
+  padding: 50px;
+
+  img {
+    border-radius: 30px;
+    float: left;
+  }
+
+  .navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .button-34 {
+    background: #2e2e8f;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+  }
+
+  .button-34:hover {
+    background: #4F4AE8;
+    box-shadow: #000000 0 10px 10px -10px;
+    opacity: 1;
+    transform: translateY(-2px);
+    transition: all 0.2s;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+  }
+
+  li {
+
+    display: inline-block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+
+  }
+
+  li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+}
+
+
+body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Search bar */
+.search-section {
+  text-align: center;
+  padding: 20px;
+  background: #eaeef3;
+}
+#searchBox {
+  width: 60%;
+  padding: 12px;
+  border: 2px solid #648eca;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+/* Categories */
+.categories {
+  text-align: center;
+  margin: 30px 0;
+}
+.category-list button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #648eca;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.category-list button:hover {
+  background: #4F4AE8;
+}
+
+/* Product Showcase */
+.product-showcase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.preview {
+  position: relative;
+  width: 45%;
+  overflow: hidden;
+}
+.preview img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.2s ease-out;
+}
+.preview:hover img {
+  transform: scale(1.2);
+  cursor: zoom-in;
+}
+.color-options {
+  position: absolute;
+  top: 20%;
+  right: -60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.color-options button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Description */
+.description {
+  width: 45%;
+  padding: 20px;
+}
+.description h2 {
+  margin-bottom: 15px;
+}
+.description p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.description ul {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background: linear-gradient(135deg, #0c1f3c, #648eca);
+  color: #bfbbbd;
+  padding: 40px 80px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* spread evenly */
+  flex-wrap: wrap; /* responsive on smaller screens */
+  gap: 20px;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 200px; /* prevent shrinking too much */
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #5d5c5c;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: #5d5c5c;
+}
+
+.footer a:hover {
+  color: #248be6;
+}
+
+.footer .social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer .social-icons img {
+  margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  filter: invert(60%) sepia(20%) saturate(200%) hue-rotate(170deg) brightness(90%) contrast(85%);
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+
+.footer .social-icons img:hover {
+  filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
+.footer .Copyrights {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #888;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+  <!-- Navigation (same as your main page) -->
+  <nav>
+
+        <div class="navigation">
+            <img src="images/Ri.jpg" alt="Logo of Richard interior" style="width: 50px; height: 50px;">
+            <ul>
+                <li><a class="button-34" role="button" href="HomePage.html">Home</a></li>
+                <li><a class="button-34" role="button" href="Products.html">Products</a></li>
+                <li><a class="button-34" role="button" href="#Gallery">Gallery</a></li>
+                <li><a class="button-34" role="button" href="AboutUs.html">About</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+  <!-- Search Bar -->
+  <section class="search-section">
+    <input type="text" id="searchBox" placeholder="Search products..." onkeyup="searchProducts()">
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Choose Category</h2>
+    <div class="category-list">
+      <button onclick="showCategory('sofa')">Sofas</button>
+      <button onclick="showCategory('curtains')">Curtains</button>
+      <button onclick="showCategory('tables')">Tables</button>
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section class="product-showcase">
+    <div class="preview">
+      <img id="mainImage" src="images/sofa1.jpg" alt="Product Preview">
+      <div class="color-options">
+        <button style="background:#2c3e50;" onclick="changeColor('images/sofa1.jpg')"></button>
+        <button style="background:#c0392b;" onclick="changeColor('images/sofa2.jpg')"></button>
+        <button style="background:#27ae60;" onclick="changeColor('images/sofa3.jpg')"></button>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2 id="productTitle">Luxury Sofa</h2>
+      <p id="productDesc">
+        Our luxury sofas are crafted with premium materials for comfort and durability. 
+        Available in multiple color options to perfectly fit your living room.
+      </p>
+      <ul>
+        <li>High-quality fabric</li>
+        <li>Durable wooden frame</li>
+        <li>Customizable colors</li>
+      </ul>
+      <button class="button-34">Enquire Now</button>
+    </div>
+  </section>
+
+  <!-- Footer (same as your main page) -->
+  <footer>
+        <div class="footer" id="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Visit Us</h4>
+                    <p>521/12, Ven. Muruththettuwe <br>Ananda Himi Mawatha, <br> Colombo 05</p>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Opening Hours</h4>
+                    <p>Mon - Fri: 08:30 - 17:30 <br> Sat: 08:30 - 13:30 <br> Sun: Closed</p>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Contact Us</h4>
+                    <p>Hotline: +94 114 541 262 <br> Mobile: +94 773 956 380 <br> Email: richblinds@eureka.lk</p>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Useful Links</h4>
+                    <a href="#Products">Products</a><br>
+                    <a href="#PrivacyPolicy">Privacy Policy</a><br>
+                    <a href="FormPage.html">Contact Us</a><br>
+                    <a href="AboutUs.html">About</a>
+                </div>
+            </div>
+
+            <!-- Social media -->
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook_icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram_icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/whatsapp_icon.png" alt="WhatsApp"></a>
+            </div>
+            <hr>
+            <p class="Copyrights">&copy; 2025 Rich Blinds • Triple D Vision</p>
+        </div>
+    </footer>
+
+  <script src="products.js"></script>
+</body>
+</html>

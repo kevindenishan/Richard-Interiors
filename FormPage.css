@@ -1,3 +1,5 @@
+
+
 /* Reset default styles */
 * {
     margin: 0;
@@ -12,13 +14,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #0c1f3c, #1d3557);
+    background: linear-gradient(135deg, #0c1f3c, #648eca);
     color: #f8f9fa;
+    
+    h1 {
+        padding: 200px;
+        margin-bottom: 20px;
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
 }
 
 /* Form styling */
 form {
-    background: rgba(255, 255, 255, 0.08);
+    float: right;
+    background-image: linear-gradient(to left top, #051937, #133d61, #22668b, #3491b4, #4dbfdb);
     backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 16px;

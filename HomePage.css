@@ -1,5 +1,5 @@
 nav {
-  background-color: #0c1f3c;
+  background: linear-gradient(135deg, #0c1f3c, #648eca);
   color: #bfbbbd;
   padding: 50px;
 
@@ -13,6 +13,33 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
+  }
+
+  .button-34 {
+    background: #2e2e8f;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+  }
+
+  .button-34:hover {
+    background: #4F4AE8;
+    box-shadow: #000000 0 10px 10px -10px;
+    opacity: 1;
+    transform: translateY(-2px);
+    transition: all 0.2s;
   }
 
   ul {
@@ -38,53 +65,157 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
   }
-
-  li a:hover {
-    background-color: #443dda;
-    color: #b2a1aa;
-  }
 }
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .Home {
-  .Texts {
-    background-color: #c6c3c6;
-    color: #535b6e;
-    padding: 10px 0px 200px 60px;
+  position: relative; /* Make container a positioned element */
+}
+.Home img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 0px 0px 150px 150px;
+  display: block;
+}
 
-    h1 {
-      padding-left: 60px;
-    }
+.Home .Texts {
+  color: #ffffff;
+  text-align: center;
+  text-shadow: #000000 2px 2px 4px;
+  padding: 10px 0px 200px 60px;
+  position: absolute; /* Place text on top of image */
+  top: 60%; /* adjust vertical placement */
+  left: 20%;
+  transform: translateY(-50%); /* center vertically */
+}
 
-    p {
-      padding: 60px 0px 80px 60px;
-    }
+.Home .Texts h1 {
+  padding-left: 60px;
+}
 
-    a {
-      margin: 100px 0px 105px 70px;
-      text-decoration: none;
-      padding: 20px;
-      border-style: solid;
-      border-color: black;
-      border-width: 2px;
-      color: black;
-    }
+.Home .Texts p {
+  padding: 60px 0px 80px 60px;
+}
 
-    a:hover {
-      background-color: #0c1f3c;
-      color: #bfbbbd;
-    }
+.button-78 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .button-78 {
+    padding: 19px 32px;
   }
+}
 
+.button-78:before,
+.button-78:after {
+  border-radius: 80px;
+}
+
+.button-78:before {
+  background-image: linear-gradient(92.83deg, #19296c 0, #5265dd 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-78:after {
+  background-color: initial;
+  background-image: linear-gradient(#1c0578 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-78:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, rgb(91, 60, 211) 0%, rgb(23, 7, 69) 100%);
+}
+
+.button-78:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.button-78:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-78:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #443ebe 0, #1d1150 100%);
+}
+
+.button-78:active:not(:disabled):after {
+  background-image: linear-gradient(#190649 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-78:disabled {
+  cursor: default;
+  opacity: .24;
 }
 
 
+
 .Products {
+  border-radius: 50px 50px 50px 50px;
   color: #bfbbbd;
-  background-color: #0c1f3c;
+  background: linear-gradient(135deg, #0c1f3c, #648eca);
   padding-bottom: 100px;
   /* reduced for better layout */
 }
@@ -92,6 +223,7 @@ body {
 .Products h1 {
   text-align: center;
   margin-bottom: 20px;
+  padding-top: 40px;
 }
 
 .Products .product-images {
@@ -104,10 +236,10 @@ body {
 
 .Products .product-images .product-box {
   width: auto;
-  height: 350px;
+  height: 250px;
   overflow: hidden;
-  border-radius: 10px;
-  transition: transform 0.4s ease, filter 0.4s ease;
+  border-radius: 15px;
+  transition: transform 0.4s linear, filter 0.4s ease;
 }
 
 .Products .product-images img {
@@ -140,43 +272,97 @@ body {
 
 .Howweworks {
   color: black;
-  background-color: #bfbbbd;
-  padding-bottom: 600px;
+  background-color: #ffffff;
+  padding-bottom: 400px;
 
   h1 {
     text-align: center;
+    padding-top: 40px;
   }
 }
 
-.product-section {
-  padding: 60px 0;
+.footer {
+  background: linear-gradient(135deg, #0c1f3c, #648eca);
+  color: #bfbbbd;
+  padding: 40px 80px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
 }
 
-.product-title {
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* spread evenly */
+  flex-wrap: wrap; /* responsive on smaller screens */
+  gap: 20px;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 200px; /* prevent shrinking too much */
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #5d5c5c;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: #5d5c5c;
+}
+
+.footer a:hover {
+  color: #248be6;
+}
+
+.footer .social-icons {
+  margin-top: 20px;
   text-align: center;
-  font-weight: 700;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
 }
 
-.product-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+.footer .social-icons img {
+  margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  filter: invert(60%) sepia(20%) saturate(200%) hue-rotate(170deg) brightness(90%) contrast(85%);
+  transition: filter 0.3s;
+  cursor: pointer;
 }
 
-.product-img:hover {
-  transform: scale(1.15);
-  /* Slightly bigger on hover */
+.footer .social-icons img:hover {
+  filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(180deg) brightness(100%) contrast(100%);
 }
 
-.img-col {
+.footer .Copyrights {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+#goTopBtn {
+  display: none;              /* Hidden by default */
+  position: fixed;            /* Stays in place */
+  bottom: 30px;               /* Distance from bottom */
+  right: 30px;                /* Distance from right */
+  z-index: 99;                /* Make sure it’s above other elements */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, #648eca, #0c1f3c);
+  color: white;
+  cursor: pointer;
   padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.Howweworks {
-  padding-top: 50px;
+#goTopBtn:hover {
+  background: #4F4AE8;
+  transform: translateY(-3px);
 }

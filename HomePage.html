@@ -15,26 +15,24 @@
         <div class="navigation">
             <img src="images/Ri.jpg" alt="Logo of Richard interior" style="width: 50px; height: 50px;">
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Products">Products</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#footer">About</a></li>
+                <li><a class="button-34" role="button" href="#Home">Home</a></li>
+                <li><a class="button-34" role="button" href="Products.html">Products</a></li>
+                <li><a class="button-34" role="button" href="#Gallery">Gallery</a></li>
+                <li><a class="button-34" role="button" href="AboutUs.html">About</a></li>
             </ul>
         </div>
 
     </nav>
 
     <div class="Home" id="Home">
-
-    </div>
-    </div>
-    <div class="Texts">
-        <h1> World Class Intrior Design</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta <br> dolorem id laboriosam odit
-            earum vero deserunt, alias aut officiis natus totam voluptates, <br> sapiente inventore! Molestiae, corrupti
-            consequuntur. Excepturi, enim.</p>
-        <a href="#footer"> Contact Us</a>
-    </div>
+        <img src="images/DSC03101.JPG" alt="Interior Design" class="Home-image">
+        <div class="Texts">
+            <h1> World Class Interior Design</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta <br> dolorem id laboriosam odit
+                earum vero deserunt, alias aut officiis natus totam voluptates, <br> sapiente inventore! Molestiae,
+                corrupti consequuntur. Excepturi, enim.</p>
+            <a href="FormPage.html" class="button-78" role="button">Contact Us</a>
+        </div>
     </div>
 
     <div class="Products" id="Products">
@@ -60,6 +58,15 @@
             <div class="product-box">
                 <img src="images/IMG_4529.JPG" alt="Product 6">
             </div>
+            <div class="product-box">
+                <img src="images/DSC02547.jpg" alt="Product 6">
+            </div>
+            <div class="product-box">
+                <img src="images/DSC02882.jpg" alt="Product 6">
+            </div>
+            <div class="product-box">
+                <img src="images/DSC02115.jpg" alt="Product 6">
+            </div>
         </div>
     </div>
 
@@ -68,8 +75,6 @@
         <!-- How we works page for provide the details of the service and the prosedure-->
         <h1>How We Works</h1>
 
-    </div>
-    <div class="work-details">
         <p>We provide world class interior design services with a focus on quality and customer satisfaction.
             Our process includes:</p>
         <ul>
@@ -80,16 +85,68 @@
             <li>Final Review and Adjustments</li>
         </ul>
     </div>
+
     <footer>
-        <!-- place footer here -->
         <div class="footer" id="footer">
-            <p>&copy; 2024 Richard Interios. All rights reserved.</p>
-            <a href="FormPage.html" target="_self">Contact Us</a>
-            <p>Phone: +1234567890</p>
-            <p>Email: richardinteriors@gmial.com</p>
-            <p>Address: 123 Interior St, Design City, Country</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Visit Us</h4>
+                    <p>521/12, Ven. Muruththettuwe <br>Ananda Himi Mawatha, <br> Colombo 05</p>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Opening Hours</h4>
+                    <p>Mon - Fri: 08:30 - 17:30 <br> Sat: 08:30 - 13:30 <br> Sun: Closed</p>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Contact Us</h4>
+                    <p>Hotline: +94 114 541 262 <br> Mobile: +94 773 956 380 <br> Email: richblinds@eureka.lk</p>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Useful Links</h4>
+                    <a href="#Products">Products</a><br>
+                    <a href="#PrivacyPolicy">Privacy Policy</a><br>
+                    <a href="FormPage.html">Contact Us</a><br>
+                    <a href="AboutUs.html">About</a>
+                </div>
+            </div>
+
+            <!-- Social media -->
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook_icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram_icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/whatsapp_icon.png" alt="WhatsApp"></a>
+            </div>
+            <hr>
+            <p class="Copyrights">&copy; 2025 Rich Blinds • Triple D Vision</p>
         </div>
     </footer>
+    <!-- Go to Top Button -->
+    <button onclick="topFunction()" id="goTopBtn" title="Go to top">↑</button>
+
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("goTopBtn");
+
+        // Show button when user scrolls down 200px
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When user clicks, scroll to top smoothly
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 
 
 </body>
