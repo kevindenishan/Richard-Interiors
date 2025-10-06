@@ -89,8 +89,9 @@ textarea::placeholder {
 
 /* Button */
 button {
-    width: 100%;
-    padding: 12px;
+    justify-content: space-evenly;
+    width: 45%;
+    padding: 15px;
     background: linear-gradient(135deg, #4cc9f0, #4361ee);
     color: #fff;
     font-size: 1rem;
@@ -99,6 +100,9 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease, transform 0.2s ease;
+}
+button.back {
+    margin-left: 25px;
 }
 
 button:hover {

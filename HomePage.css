@@ -70,10 +70,19 @@ nav {
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .Home {
-  position: relative; /* Make container a positioned element */
-}
-.Home img {
+  position: relative;
+  /* Make container a positioned element */
+  background-image: url('images/DSC03101.JPG');
+  opacity: 0.9;
+  background-size: cover;
+  /* Ensure the image covers the container */
+  background-position: center;
+  /* Center the image */
+  height: 600px;
+  /* Set a fixed height for the hero section */
+  width: 100%;
   width: 100%;
   height: 600px;
   object-fit: cover;
@@ -82,22 +91,22 @@ body {
 }
 
 .Home .Texts {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  font-style: normal;
   color: #ffffff;
   text-align: center;
-  text-shadow: #000000 2px 2px 4px;
-  padding: 10px 0px 200px 60px;
-  position: absolute; /* Place text on top of image */
-  top: 60%; /* adjust vertical placement */
-  left: 20%;
-  transform: translateY(-50%); /* center vertically */
+  text-shadow: #343333 2px 2px 4px;
+  padding: 100px 0px 0px 0px;
 }
 
 .Home .Texts h1 {
-  padding-left: 60px;
+  text-align: center;
 }
 
 .Home .Texts p {
-  padding: 60px 0px 80px 60px;
+  padding: 0px 0px 80px 60px;
 }
 
 .button-78 {
@@ -113,7 +122,7 @@ body {
   display: inline-block;
   flex-direction: row;
   flex-shrink: 0;
-  font-family: Eina01,sans-serif;
+  font-family: Eina01, sans-serif;
   font-size: 16px;
   font-weight: 800;
   justify-content: center;
@@ -122,7 +131,7 @@ body {
   min-height: 64px;
   outline: none;
   overflow: visible;
-  padding: 19px 26px;
+  padding: 0px 26px;
   pointer-events: auto;
   position: relative;
   text-align: center;
@@ -293,19 +302,23 @@ body {
 
 .footer-content {
   display: flex;
-  justify-content: space-between; /* spread evenly */
-  flex-wrap: wrap; /* responsive on smaller screens */
+  justify-content: space-between;
+  /* spread evenly */
+  flex-wrap: wrap;
+  /* responsive on smaller screens */
   gap: 20px;
 }
 
 .footer-info {
   flex: 1;
-  min-width: 200px; /* prevent shrinking too much */
+  min-width: 200px;
+  /* prevent shrinking too much */
   line-height: 1.6;
+  padding-left: 110px;
 }
 
 .footer a {
-  color: #5d5c5c;
+  color: #e37d7d;
   text-decoration: none;
   padding-bottom: 20px;
 }
@@ -345,11 +358,16 @@ body {
 }
 
 #goTopBtn {
-  display: none;              /* Hidden by default */
-  position: fixed;            /* Stays in place */
-  bottom: 30px;               /* Distance from bottom */
-  right: 30px;                /* Distance from right */
-  z-index: 99;                /* Make sure it’s above other elements */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stays in place */
+  bottom: 30px;
+  /* Distance from bottom */
+  right: 30px;
+  /* Distance from right */
+  z-index: 99;
+  /* Make sure it’s above other elements */
   font-size: 18px;
   border: none;
   outline: none;
@@ -358,7 +376,7 @@ body {
   cursor: pointer;
   padding: 15px;
   border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
