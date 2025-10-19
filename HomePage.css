@@ -1,231 +1,231 @@
-nav {
-  background: linear-gradient(135deg, #0c1f3c, #648eca);
-  color: #bfbbbd;
-  padding: 50px;
+:root{
+--primary-color: #0c1f3c;
+--secondary-color: #e3e4e4;
+--hover-color: #454e62;
+--accent-color: #0071FF;
+--text-color: #f0f0f0;
+} 
+/* Reset default browser styles */
 
-  img {
-    border-radius: 30px;
-    float: left;
-  }
-
-  .navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .button-34 {
-    background: #2e2e8f;
-    border-radius: 999px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    opacity: 1;
-    outline: 0 solid transparent;
-    padding: 8px 18px;
-    touch-action: manipulation;
-    width: fit-content;
-    word-break: break-word;
-    border: 0;
-  }
-
-  .button-34:hover {
-    background: #4F4AE8;
-    box-shadow: #000000 0 10px 10px -10px;
-    opacity: 1;
-    transform: translateY(-2px);
-    transition: all 0.2s;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    float: right;
-  }
-
-  li {
-
-    display: inline-block;
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-
-  }
-
-  li a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-}
-
-body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.Home {
-  position: relative;
-  /* Make container a positioned element */
-  background-image: url('images/DSC03101.JPG');
-  opacity: 0.9;
-  background-size: cover;
-  /* Ensure the image covers the container */
-  background-position: center;
-  /* Center the image */
-  height: 600px;
-  /* Set a fixed height for the hero section */
-  width: 100%;
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  border-radius: 0px 0px 150px 150px;
-  display: block;
-}
-
-.Home .Texts {
-  font-family: "Encode Sans Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 25px;
-  font-style: normal;
-  color: #ffffff;
-  text-align: center;
-  text-shadow: #343333 2px 2px 4px;
-  padding: 100px 0px 0px 0px;
-}
-
-.Home .Texts h1 {
-  text-align: center;
-}
-
-.Home .Texts p {
-  padding: 0px 0px 80px 60px;
-}
-
-.button-78 {
-  align-items: center;
-  appearance: none;
-  background-clip: padding-box;
-  background-color: initial;
-  background-image: none;
-  border-style: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  flex-direction: row;
-  flex-shrink: 0;
-  font-family: Eina01, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  justify-content: center;
-  line-height: 24px;
+* {
   margin: 0;
-  min-height: 64px;
-  outline: none;
-  overflow: visible;
-  padding: 0px 26px;
-  pointer-events: auto;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  width: auto;
-  word-break: keep-all;
-  z-index: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (min-width: 768px) {
-  .button-78 {
-    padding: 19px 32px;
+/* Section Background */
+#hompage {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(81, 138, 199, 0.2)),
+    url('images/DSC00880.JPG') center/cover no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background: rgba(253, 254, 255, 0.199);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: #5d5c5c 0px 4px 30px -10px;
+}
+
+/* Logo */
+nav img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  margin-right: auto;
+}
+
+nav img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Navigation Links */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Button-34 Style (Navigation Links) */
+.button-34 {
+  background: transparent;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.button-34:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Homepage Text Area - CENTERED NOW */
+.Home {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  /* vertically center */
+  justify-content: center;
+  /* horizontally center */
+  text-align: center;
+  /* center text alignment */
+  padding: 0 20px;
+}
+
+/* Texts inside home */
+.Texts {
+  max-width: 700px;
+}
+
+.Texts h1 {
+  font-size: clamp(1.8rem, calc(3vw + 1rem), 5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  color: #fff;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.Texts p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+/* Call to Action Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+
+
+/* Responsive Design */
+/* Tablet and smaller devices */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 30px;
+  }
+
+  nav ul {
+    display: none;
+    /* Hiding the nav links. A hamburger menu would be the next step. */
+  }
+
+  .Texts h1 {
+    font-size: 2.5rem;
+  }
+
+  .Texts p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .cta-button {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+
+  /* Make product image grid stack vertically */
+  .Products .product-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Products .product-images .product-box {
+    width: 90%;
+    height: 250px;
+  }
+
+  /* Disable complex hover effects on touch devices */
+  .Products .product-images:hover .product-box {
+    transform: none;
+    filter: none;
+  }
+
+  .Products .product-images .product-box:hover {
+    transform: scale(1.05);
+    /* Simpler hover for touch */
   }
 }
 
-.button-78:before,
-.button-78:after {
-  border-radius: 80px;
+/* Mobile phones */
+@media (max-width: 480px) {
+  #hompage {
+    height: 90vh;
+    /* Give a bit more space on mobile */
+  }
+
+  nav {
+    padding: 0 20px;
+  }
+
+  .Texts h1 {
+    font-size: 2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-info {
+    padding-left: 0;
+  }
 }
-
-.button-78:before {
-  background-image: linear-gradient(92.83deg, #19296c 0, #5265dd 100%);
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -2;
-}
-
-.button-78:after {
-  background-color: initial;
-  background-image: linear-gradient(#1c0578 0, #0c0d0d 100%);
-  bottom: 4px;
-  content: "";
-  display: block;
-  left: 4px;
-  overflow: hidden;
-  position: absolute;
-  right: 4px;
-  top: 4px;
-  transition: all 100ms ease-out;
-  z-index: -1;
-}
-
-.button-78:hover:not(:disabled):before {
-  background: linear-gradient(92.83deg, rgb(91, 60, 211) 0%, rgb(23, 7, 69) 100%);
-}
-
-.button-78:hover:not(:disabled):after {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  transition-timing-function: ease-in;
-  opacity: 0;
-}
-
-.button-78:active:not(:disabled) {
-  color: #ccc;
-}
-
-.button-78:active:not(:disabled):before {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #443ebe 0, #1d1150 100%);
-}
-
-.button-78:active:not(:disabled):after {
-  background-image: linear-gradient(#190649 0, #0c0d0d 100%);
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  top: 4px;
-}
-
-.button-78:disabled {
-  cursor: default;
-  opacity: .24;
-}
-
-
 
 .Products {
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 0 0 50px 50px;
   color: #bfbbbd;
   background: linear-gradient(135deg, #0c1f3c, #648eca);
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   /* reduced for better layout */
 }
 
@@ -293,7 +293,7 @@ body {
 .footer {
   background: linear-gradient(135deg, #0c1f3c, #648eca);
   color: #bfbbbd;
-  padding: 40px 80px;
+  padding: min(2em, 5%) 80px;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
