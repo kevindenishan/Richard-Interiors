@@ -17,13 +17,14 @@
 
     <section id="hompage">
         <div class="navigation"></div>
-        <nav> <img src="images/Ri.jpg" alt="Logo of Richard interior" style="width: 50px; height: 50px;">
+        <nav> <img class="logo" src="images/Ri.jpg" alt="Logo of Richard interior" style="width: 50px; height: 50px;">
             <ul>
                 <li><a class="button-34" role="button" href="#Home">Home</a></li>
                 <li><a class="button-34" role="button" href="Products.html">Products</a></li>
                 <li><a class="button-34" role="button" href="#Gallery">Gallery</a></li>
                 <li><a class="button-34" role="button" href="AboutUs.html">About</a></li>
             </ul>
+            <img src="images/menu-burger.svg" alt="navigation menu bar mobile" class="menu-btn"  style="width: 45px; height: 45px;">
         </nav>
         </div>
         <div class="Home" id="Home">
@@ -148,6 +149,49 @@
         function topFunction() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        const menuBtn = document.querySelector('.menu-btn');
+        // Select the actual <nav> element (the menu container), not the empty .navigation div
+        const nav = document.querySelector('nav');
+
+        // Defensive checks: only add listener if elements exist
+        if (menuBtn && nav) {
+            // improve accessibility: reflect expanded state
+            menuBtn.setAttribute('role', 'button');
+            menuBtn.setAttribute('aria-expanded', 'false');
+
+            menuBtn.addEventListener('click', function () {
+                nav.classList.toggle('active');
+                const expanded = nav.classList.contains('active');
+                menuBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+            });
+        }
+    </script>
+
+    <script>
+        // Auto-scale and blur product images on mobile as they scroll into view.
+        (function () {
+            if (!('IntersectionObserver' in window)) return; // graceful fallback
+
+            const boxes = document.querySelectorAll('.product-box');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const el = entry.target;
+                    if (entry.intersectionRatio > 0.55) {
+                        el.classList.add('in-view');
+                    } else {
+                        el.classList.remove('in-view');
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px',
+                threshold: [0.0, 0.55, 1.0]
+            });
+
+            boxes.forEach(b => observer.observe(b));
+        })();
     </script>
 
 
