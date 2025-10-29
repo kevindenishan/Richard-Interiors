@@ -169,9 +169,9 @@ nav .menu-btn {
     /* Show menu button */
   }
 
-  
 
-  nav.active ul{
+
+  nav.active ul {
     right: 0;
   }
 
@@ -202,8 +202,6 @@ nav .menu-btn {
 
   }
 
-
-
   .Texts h1 {
     font-size: 2.5rem;
   }
@@ -221,7 +219,7 @@ nav .menu-btn {
 
 /* Mobile phones */
 @media (max-width: 768px) {
-  #hompage {
+  #homepage {
     height: 90vh;
     /* Give a bit more space on mobile */
   }
@@ -267,7 +265,8 @@ nav .menu-btn {
   }
 
   .Products .product-images .product-box:hover {
-    transform: scale(1.03); /* subtle hover for touch */
+    transform: scale(1.03);
+    /* subtle hover for touch */
   }
 }
 
@@ -354,8 +353,8 @@ nav .menu-btn {
     filter: none;
     z-index: 2;
     opacity: 1;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-     
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+
   }
 
   /* When hovering/touching a specific box still apply a bit of emphasis */
@@ -365,6 +364,7 @@ nav .menu-btn {
     filter: none;
   }
 }
+
 .Howweworks {
   color: black;
   background-color: #ffffff;
